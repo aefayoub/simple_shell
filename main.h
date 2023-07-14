@@ -1,5 +1,5 @@
-#ifndef _MAIN_
-#define _MAIN_
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdio.h>
 #include <unistd.h>
@@ -12,5 +12,6 @@
 #include <signal.h>
 #include <limits.h>
 
+void print_strings(const char **str_array, int num_strings);
 
-#endif
+#endif /* MAIN_H */
