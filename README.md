@@ -1,6 +1,6 @@
 # 0x16. C - Simple Shell
 
-![c](https://img.shields.io/badge/c-red.svg) ![Group project](https://img.shields.io/badge/Group project-red.svg) ![Syscall](https://img.shields.io/badge/Syscall-red.svg)
+![c](https://img.shields.io/badge/c-red.svg) ![Groupproject](https://img.shields.io/badge/Group&nbsp;project-red.svg) ![Syscall](https://img.shields.io/badge/Syscall-red.svg)
 
 
 ```
