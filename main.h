@@ -14,8 +14,12 @@
 
 #define BUFFER_SIZE 1024
 
-void print_strings(const char **str_array, int num_strings);
-int main(void);
+char *_strConcatenate(char *dest, const char *src);
+char *_strCopy(char *dest, char *src);
+int _strCompares(char *s1, char *s2);
+char *_strCharacterLocator(char *s, char c);
+int _strLength(char *s, char *accept);
+
 
 
 #endif /* MAIN_H */
