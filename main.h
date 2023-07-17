@@ -20,6 +20,13 @@ int _strCompares(char *s1, char *s2);
 char *_strCharacterLocator(char *s, char c);
 int _strLength(char *s, char *accept);
 
+char *_strDuplicates(const char *s);
+int _strLenghtofString(const char *s);
+int compareChars(char str[], const char *delim);
+char *_strSpliter(char str[], const char *delim);
+int _strIfDigital(const char *s);
+
+void strReversing(char *s);
 
 
 #endif /* MAIN_H */
