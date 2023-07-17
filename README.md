@@ -23,4 +23,5 @@
 ```
 
 ## Flowchart
-![flowchart](https://github.com/aefayoub/simple_shell/blob/master/flowchart.drawio)
+![flowchart](https://github.com/aefayoub/simple_shell/blob/master/flowchart.jpg)
+
