@@ -12,6 +12,10 @@
 #include <signal.h>
 #include <limits.h>
 
+#define BUFFER_SIZE 1024
+
 void print_strings(const char **str_array, int num_strings);
+int main(void);
+
 
 #endif /* MAIN_H */
