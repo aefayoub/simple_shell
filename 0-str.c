@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _strConcatenate- concatenate two strings
+ * _strcat - concatenate two strings
  * @dest: char pointer the dest of the copied str
  * @src: const char pointer the source of str
  * Return: the dest
  */
-char *_strConcatenate(char *dest, const char *src)
+char *_strcat(char *dest, const char *src)
 {
 	int i;
 	int j;
@@ -24,12 +24,12 @@ char *_strConcatenate(char *dest, const char *src)
 	return (dest);
 }
 /**
- * _strCopy - Copies the string pointed to by src.
+ * *_strcpy - Copies the string pointed to by src.
  * @dest: Type char pointer the dest of the copied str
  * @src: Type char pointer the source of str
  * Return: the dest.
  */
-char *_strCopy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 
 	size_t a;
@@ -43,12 +43,12 @@ char *_strCopy(char *dest, char *src)
 	return (dest);
 }
 /**
- * _strCompares - Function that compares two strings.
+ * _strcmp - Function that compares two strings.
  * @s1: type str compared
  * @s2: type str compared
  * Return: Always 0.
  */
-int _strCompares(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	int i;
 
@@ -62,12 +62,12 @@ int _strCompares(char *s1, char *s2)
 	return (0);
 }
 /**
- * _strCharacterLocator - locates a character in a string,
+ * _strchr - locates a character in a string,
  * @s: string.
  * @c: character.
  * Return: the pointer to the first occurrence of the character c.
  */
-char *_strCharacterLocator(char *s, char c)
+char *_strchr(char *s, char c)
 {
 	unsigned int i = 0;
 
@@ -79,12 +79,12 @@ char *_strCharacterLocator(char *s, char c)
 	return ('\0');
 }
 /**
- * _strLength - gets the length of a prefix substring.
+ * _strspn - gets the length of a prefix substring.
  * @s: initial segment.
  * @accept: accepted bytes.
  * Return: the number of accepted bytes.
  */
-int _strLength(char *s, char *accept)
+int _strspn(char *s, char *accept)
 {
 	int i, j, bool;
 

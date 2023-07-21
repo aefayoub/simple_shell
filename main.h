@@ -87,18 +87,22 @@ typedef struct builtin_s
 } builtin_t;
 
 /* 0-str.c */
-char *_strConcatenate(char *dest, const char *src);
-char *_strCopy(char *dest, char *src);
-int _strCompares(char *s1, char *s2);
-char *_strCharacterLocator(char *s, char c);
-int _strLength(char *s, char *accept);
+char *_strcat(char *dest, const char *src);
+char *_strcpy(char *dest, char *src);
+int _strcmp(char *s1, char *s2);
+char *_strchr(char *s, char c);
+int _strspn(char *s, char *accept);
+
 
 /* 1-str.c */
-char *_strDuplicates(const char *s);
-int _strLenghtofString(const char *s);
-int compareChars(char str[], const char *delim);
-char *_strSpliter(char str[], const char *delim);
-int _strIfDigital(const char *s);
+char *_strdup(const char *s);
+int _strlen(const char *s);
+int cmp_chars(char str[], const char *delim);
+char *_strtok(char str[], const char *delim);
+int _isdigit(const char *s);
+
+/* 1-str.c */
+void rev_string(char *s);
 
 
 

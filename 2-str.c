@@ -5,7 +5,7 @@
  * @s: input string.
  * Return: no return.
  */
-void strReversing(char *s)
+void rev_string(char *s)
 {
 	int count = 0, i, j;
 	char *str, temp;
