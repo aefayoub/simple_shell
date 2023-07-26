@@ -17,8 +17,8 @@ char *_strdup(const char *s)
 	_memcpy(new, s, len + 1);
 	return (new);
 }
-
-/**
+		
+/*
  * _strlen - Returns the lenght of a string.
  * @s: Type char pointer
  * Return: Always 0.

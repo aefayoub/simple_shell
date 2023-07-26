@@ -1,5 +1,5 @@
-#ifndef _HOLBERTON_
-#define _HOLBERTON_
+#ifndef _MAIN_
+#define _MAIN_
 
 #include <stdio.h>
 #include <unistd.h>
@@ -12,6 +12,7 @@
 #include <signal.h>
 #include <limits.h>
 
+#define BOOST_TEST_MODULE <shell>
 #define BUFSIZE 1024
 #define TOK_BUFSIZE 128
 #define TOK_DELIM " \t\r\n\a"
