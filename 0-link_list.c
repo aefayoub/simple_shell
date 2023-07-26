@@ -32,7 +32,6 @@ sep_list *add_sep_node_end(sep_list **head, char sep)
 
 	return (*head);
 }
-
 /**
  * free_sep_list - frees a sep_list
  * @head: head of the linked list.
@@ -54,7 +53,6 @@ void free_sep_list(sep_list **head)
 		*head = NULL;
 	}
 }
-
 /**
  * add_line_node_end - adds a command line at the end
  * of a line_list.
@@ -87,7 +85,6 @@ line_list *add_line_node_end(line_list **head, char *line)
 
 	return (*head);
 }
-
 /**
  * free_line_list - frees a line_list
  * @head: head of the linked list.
@@ -109,3 +106,4 @@ void free_line_list(line_list **head)
 		*head = NULL;
 	}
 }
+

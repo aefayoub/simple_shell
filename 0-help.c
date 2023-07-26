@@ -40,8 +40,6 @@ void aux_help_unsetenv(void)
 	help = "Remove an entry completely from the environment\n";
 	write(STDOUT_FILENO, help, _strlen(help));
 }
-
-
 /**
  * aux_help_general - Entry point for help information for the help builtin
  * Return: no return
@@ -78,3 +76,4 @@ void aux_help_exit(void)
 	help = "statusis that of the last command executed\n";
 	write(STDOUT_FILENO, help, _strlen(help));
 }
+

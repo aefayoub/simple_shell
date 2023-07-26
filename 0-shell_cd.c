@@ -50,7 +50,6 @@ void cd_dot(data_shell *datash)
 	datash->status = 0;
 	free(cp_pwd);
 }
-
 /**
  * cd_to - changes to a directory given
  * by the user
@@ -85,7 +84,6 @@ void cd_to(data_shell *datash)
 
 	chdir(dir);
 }
-
 /**
  * cd_previous - changes to the previous directory
  *
@@ -127,7 +125,6 @@ void cd_previous(data_shell *datash)
 
 	chdir(p_pwd);
 }
-
 /**
  * cd_to_home - changes to home directory
  *
@@ -163,7 +160,6 @@ void cd_to_home(data_shell *datash)
 	free(p_pwd);
 	datash->status = 0;
 }
-
 /**
  * cd_shell - changes current directory
  *
@@ -206,3 +202,4 @@ int cd_shell(data_shell *datash)
 
 	return (1);
 }
+
