@@ -1,4 +1,4 @@
-#include "../main.h"
+#include "main.h"
 /**
  * error_path_126 - error message for path and failure denied permission.
  * @datash: data relevant (counter, arguments).

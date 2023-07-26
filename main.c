@@ -60,7 +60,7 @@ void set_data(data_shell *datash, char **av)
  */
 int main(int ac, char **av)
 {
-        data_shell datash;
+	data_shell datash;
         (void) ac;
 
         signal(SIGINT, get_sigint);

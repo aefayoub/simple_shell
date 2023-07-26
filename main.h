@@ -1,5 +1,5 @@
-#ifndef _MAIN_
-#define _MAIN_
+#ifndef MAIN_
+#define MAIN_
 
 #include <stdio.h>
 #include <unistd.h>
@@ -12,7 +12,11 @@
 #include <signal.h>
 #include <limits.h>
 
-#define BOOST_TEST_MODULE <shell>
+#define PRINT(c) (write(STDOUT_FILENO, c, _strlen(c)))
+#define PROMPT "$ "
+#define SUCCESS (1)
+#define FAIL (-1)
+#define NEUTRAL (0)
 #define BUFSIZE 1024
 #define TOK_BUFSIZE 128
 #define TOK_DELIM " \t\r\n\a"
@@ -93,16 +97,6 @@ typedef struct builtin_s
 	int (*f)(data_shell *datash);
 } builtin_t;
 
-/* lists0 */
-sep_list *add_sep_node_end(sep_list **head, char sep);
-void free_sep_list(sep_list **head);
-line_list *add_line_node_end(line_list **head, char *line);
-void free_line_list(line_list **head);
-
-/* lists1 */
-r_var *add_rvar_node(r_var **head, int lvar, char *var, int lval);
-void free_rvar_list(r_var **head);
-
 /* str0  */
 char *_strcat(char *dest, const char *src);
 char *_strcpy(char *dest, char *src);
@@ -116,6 +110,16 @@ int _strlen(const char *s);
 int cmp_chars(char str[], const char *delim);
 char *_strtok(char str[], const char *delim);
 int _isdigit(const char *s);
+
+/* lists0 */
+sep_list *add_sep_node_end(sep_list **head, char sep);
+void free_sep_list(sep_list **head);
+line_list *add_line_node_end(line_list **head, char *line);
+void free_line_list(line_list **head);
+
+/* lists1 */
+r_var *add_rvar_node(r_var **head, int lvar, char *var, int lval);
+void free_rvar_list(r_var **head);
 
 /* allocateMemory */
 void _memcpy(void *newptr, const void *ptr, unsigned int size);
@@ -231,4 +235,4 @@ void aux_help_cd(void);
 /* get_help.c */
 int get_help(data_shell *datash);
 
-#endif 
+#endif /* MAIN_ */
