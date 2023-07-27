@@ -61,13 +61,15 @@ void set_data(data_shell *datash, char **av)
 int main(int ac, char **av)
 {
 	data_shell datash;
-        (void) ac;
+	(void) ac;
 
-        signal(SIGINT, get_sigint);
-        set_data(&datash, av);
-        shell_loop(&datash);
-        free_data(&datash);
-        if (datash.status < 0)
-                return (255);
-        return (datash.status);
+	signal(SIGINT, get_sigint);
+	set_data(&datash, av);
+	shell_loop(&datash);
+	free_data(&datash);
+	if (datash.status < 0)
+	{
+		return (255);
+	}
+	return (datash.status);
 }
